@@ -33,3 +33,9 @@ Input username and password
 
 Click on the login button
     Click Element   ${loginButton}
+
+Check if the user is logged in
+    Page Should Contain     Odebrane
+
+Close browser
+    Close Browser
