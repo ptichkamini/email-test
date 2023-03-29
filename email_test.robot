@@ -6,7 +6,7 @@ ${mailURL}    https://poczta.wp.pl
 ${browser}    Chrome
 ${mailLogin}    testerwsb_t1
 ${mailPassword}     adam1234
-${cookiesButton}    css:button.az2m2j2
+${cookiesButton}    //button[contains(text(), 'AKCEPTU')]
 ${userField}      id="login"
 ${passwordField}    id="password"
 ${loginButton}  css:button.sc-bczRLJ 
@@ -24,9 +24,11 @@ Test email login
 *** Keywords ***
 Open email page
     Open Browser    ${mailURL}  ${browser}
+    Sleep   5
 
 Accept Cookies
-    Clikc Element   ${cookiesButton}
+    Click Button   ${cookiesButton}
+    Sleep   5
 
 Input username and password
     Input   ${userField}    ${mailLogin}
