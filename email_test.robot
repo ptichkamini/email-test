@@ -13,12 +13,13 @@ ${loginButton}  css:button.sc-bczRLJ
 
 
 *** Test Cases ***
-Open email page
-Accept Cookies
-Input username and password
-Click on the login button
-Check if the user is logged in
-Close browser
+Test email login
+    Open email page
+    Accept Cookies
+    Input username and password
+    Click on the login button
+    Check if the user is logged in
+    Close browser
 
 *** Keywords ***
 Open email page

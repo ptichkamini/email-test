@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.6 on linux)" generated="20230329 09:58:29.500" rpa="false" schemaversion="3">
+<suite id="s1" name="Email Test" source="/home/magdalena/email-test/email_test.robot">
+<test id="s1-t1" name="Test email login" line="16">
+<kw name="Open email page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${mailURL}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230329 09:58:29.725" level="INFO">Opening browser 'Chrome' to base url 'https://poczta.wp.pl'.</msg>
+<status status="PASS" starttime="20230329 09:58:29.724" endtime="20230329 09:58:36.046"/>
+</kw>
+<status status="PASS" starttime="20230329 09:58:29.723" endtime="20230329 09:58:36.047"/>
+</kw>
+<kw name="Accept Cookies">
+<kw name="Clikc Element">
+<arg>${cookiesButton}</arg>
+<msg timestamp="20230329 09:58:36.073" level="FAIL">No keyword with name 'Clikc Element' found. Did you mean:
+    SeleniumLibrary.Click Element</msg>
+<status status="FAIL" starttime="20230329 09:58:36.073" endtime="20230329 09:58:36.073"/>
+</kw>
+<status status="FAIL" starttime="20230329 09:58:36.047" endtime="20230329 09:58:36.073"/>
+</kw>
+<kw name="Input username and password">
+<status status="NOT RUN" starttime="20230329 09:58:36.077" endtime="20230329 09:58:36.084"/>
+</kw>
+<kw name="Click on the login button">
+<status status="NOT RUN" starttime="20230329 09:58:36.086" endtime="20230329 09:58:36.086"/>
+</kw>
+<kw name="Check if the user is logged in">
+<status status="NOT RUN" starttime="20230329 09:58:36.087" endtime="20230329 09:58:36.087"/>
+</kw>
+<kw name="Close browser">
+<status status="NOT RUN" starttime="20230329 09:58:36.087" endtime="20230329 09:58:36.087"/>
+</kw>
+<status status="FAIL" starttime="20230329 09:58:29.722" endtime="20230329 09:58:36.087">No keyword with name 'Clikc Element' found. Did you mean:
+    SeleniumLibrary.Click Element</status>
+</test>
+<status status="FAIL" starttime="20230329 09:58:29.501" endtime="20230329 09:58:36.088"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Email Test">Email Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
