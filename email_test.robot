@@ -10,6 +10,8 @@ ${cookiesButton}    //button[contains(text(), 'AKCEPTU')]
 ${userField}      //*[@id="login"]
 ${passwordField}    //*[@id="password"]
 ${loginButton}  css:button.sc-bczRLJ 
+${fakeMailLogin}    prettyinpink
+${fakeMailPassword}     lovely12
 
 
 *** Test Cases ***
@@ -19,6 +21,13 @@ Test email login
     Input username and password
     Click on the login button
     Check if the user is logged in
+    Close browser
+
+Test email login with incorrect details
+    Open email page
+    Accept Cookies
+    Input incorrect details
+    Check if login failed
     Close browser
 
 *** Keywords ***
@@ -42,3 +51,11 @@ Check if the user is logged in
 
 Close browser
     Close All Browsers
+
+Input incorrect details
+    Input Text      ${userField}    ${fakeMailLogin}
+    Input Text      ${passwordField}    ${fakeMailPassword}
+    Sleep   5
+
+Check if login failed
+    pass
