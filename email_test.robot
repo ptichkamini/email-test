@@ -24,11 +24,11 @@ Test email login
 *** Keywords ***
 Open email page
     Open Browser    ${mailURL}  ${browser}
-    Sleep   5
+    Sleep   2
 
 Accept Cookies
     Click Button   ${cookiesButton}
-    Sleep   5
+    Sleep   2
 
 Input username and password
     Input Text      ${userField}    ${mailLogin}
@@ -41,4 +41,4 @@ Check if the user is logged in
     Page Should Contain     Odebrane
 
 Close browser
-    Close Browser
+    Close All Browsers
