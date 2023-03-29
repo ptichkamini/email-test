@@ -7,8 +7,8 @@ ${browser}    Chrome
 ${mailLogin}    testerwsb_t1
 ${mailPassword}     adam1234
 ${cookiesButton}    //button[contains(text(), 'AKCEPTU')]
-${userField}      id="login"
-${passwordField}    id="password"
+${userField}      //*[@id="login"]
+${passwordField}    //*[@id="password"]
 ${loginButton}  css:button.sc-bczRLJ 
 
 
@@ -31,8 +31,8 @@ Accept Cookies
     Sleep   5
 
 Input username and password
-    Input   ${userField}    ${mailLogin}
-    Input   ${passwordField}    ${mailPassword}
+    Input Text      ${userField}    ${mailLogin}
+    Input Text      ${passwordField}    ${mailPassword}
 
 Click on the login button
     Click Element   ${loginButton}
