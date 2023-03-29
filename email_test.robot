@@ -4,12 +4,12 @@ Library    SeleniumLibrary
 *** Variables ***
 ${mailURL}    https://poczta.wp.pl
 ${browser}    Chrome
-${mailLogin}
-${mailPassword}
+${mailLogin}    testerwsb_t1
+${mailPassword}     adam1234
 ${cookiesButton}    css:button.az2m2j2
-${userField}  
-${passwordField}
-${loginButton}
+${userField}      id="login"
+${passwordField}    id="password"
+${loginButton}  css:button.sc-bczRLJ 
 
 
 *** Test Cases ***
