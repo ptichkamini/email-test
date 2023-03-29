@@ -27,6 +27,7 @@ Test email login with incorrect details
     Open email page
     Accept Cookies
     Input incorrect details
+    Click on the login button
     Check if login failed
     Close browser
 
@@ -55,7 +56,6 @@ Close browser
 Input incorrect details
     Input Text      ${userField}    ${fakeMailLogin}
     Input Text      ${passwordField}    ${fakeMailPassword}
-    Sleep   5
 
 Check if login failed
-    pass
+    Page Should Contain     nieprawidłowe  
